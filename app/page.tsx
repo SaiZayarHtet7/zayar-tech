@@ -1,5 +1,7 @@
 "use client";
+import { About } from "../components/About";
 import { Banner } from "../components/Banner";
+import { Experience } from "../components/Experience";
 import LeftSide from "../components/Leftside";
 import Navbar from "../components/Navbar";
 import { RightSide } from "../components/RightSide";
@@ -19,8 +21,10 @@ export default function Home() {
           >
             <LeftSide />
           </motion.div>
-          <div className="h-[88vh] mx-auto p-4 w-[100vw]">
+          <div className="h-[88vh] mx-auto p-4 w-full">
             <Banner></Banner>
+            <About></About>
+            <Experience></Experience>
           </div>
           <motion.div
             initial={{ opacity: 0 }}

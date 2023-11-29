@@ -76,9 +76,8 @@ jobs:
       - name: Build with Next.js
         run:  |
           npm ci
-          npm run build
+          npx --no-install next build  
           npm run export
-          touch out/.nojekyll
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Upload artifact
